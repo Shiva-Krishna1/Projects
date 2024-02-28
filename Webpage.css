@@ -1,0 +1,122 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#nav_blk{
+    padding: 0px 10px;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+#nav_blk nav{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+#nav_blk nav .logo_blk{
+    /* border: 1px solid red; */
+    padding-top: 8px;
+    height: 50px;
+    flex-basis: 15%;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#nav_blk nav .logo_blk span{
+    color: yellow;
+    margin-left: 5px;
+}
+
+#nav_blk nav .login_blk{
+    width: 8%;
+}
+#nav_blk nav .login_blk a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid rgb(222, 222, 68);
+    box-shadow: 2px 2px 20px yellow;
+}
+#nav_blk nav .login_blk a:hover{
+    color: black;
+    background-color: rgb(222, 222, 68);
+    box-shadow: 2px 2px 20px gray;
+
+}
+#nav_blk nav .content_blk{
+    height: inherit;
+    width: 40%;
+}
+#nav_blk nav .content_blk ul{
+    height: inherit;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+#nav_blk nav .content_blk ul a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+#nav_blk nav .content_blk ul a:hover{
+    text-decoration:1px overline yellow;
+    font-size: 20px;
+}
+.body_blk{
+    height: 550px;
+    width: 100%;
+    background-image: url('https://wallpapers.com/images/featured/dream-house-pictures-yjphbmq6lkdrikdb.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+.body_blk main{
+    height: 150px;
+    width: 600px;
+    text-align: center;
+    line-height: 2;
+    opacity: 1;
+}
+.body_blk main h1{
+    color: yellow;
+    font-size: 35px;
+   font-weight: bold;
+}
+.body_blk main p{
+    color: rgb(222, 221, 221);
+    font-weight: 500;
+}
+.body_blk main button{
+    height: 40px;
+    width: 120px;
+    background-color: yellow;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: black;
+    box-shadow: 2px 2px 15px yellow;
+}
+.body_blk main button:hover{
+    background-color: transparent;
+    color: yellow;
+} 
