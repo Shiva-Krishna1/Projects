@@ -1,0 +1,129 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    animation: image 2s linear 4s forwards;
+}
+
+@keyframes image {
+    0%{
+        background-color: black;
+    }
+    100%{
+        background-image: url(https://www.daysoftheyear.com/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=cover%2Cheight=650%2Cq=40%2Csharpen=1%2Cwidth=956/wp-content/uploads/new-year-fireworks-2022-12-22-20-23-24-utc.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+.msg{
+    color: gold;
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    font-weight: bolder;
+    text-shadow: 4px 4px 20px purple;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    opacity: 0;
+    animation: message 2s linear 4s forwards;
+}
+
+@keyframes message {
+    0%{
+        opacity: 0;
+        margin-top: 0 ;
+    }
+    100%{
+        opacity: 1;
+        margin-top: -150px;
+    }
+}
+.year{
+    color: white;
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    text-align: center;
+}
+.year>span{
+    font-size: 150px;
+    font-weight: 700;
+    letter-spacing: -12px;
+}
+.old{
+    color: white;
+    position: absolute;
+    top: 0px;
+    margin-left: -50px;
+    animation: old_animation 2s linear 2s forwards;
+}
+@keyframes old_animation{
+0%{
+    top: 0%;
+}
+100%{
+    top: -600px;
+}
+} 
+
+.first_year{
+    margin-right: 100px;
+}
+.new{
+    position: absolute;
+    right: -100px;
+    animation: new_animation 2s linear 1.5s forwards;
+}
+@keyframes new_animation {
+    0%{
+        right: -100px;
+    }
+    100%{
+        right: 350px;
+    }
+}
+.baloon{
+    background-color: red;
+    height: 100px;
+    width: 60px;
+    border-top-right-radius: 40%;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius: 50%;
+    position: relative;
+    top: 10%;
+}
+.stick{
+    background-color: white;
+    height: 150px;
+    width: 2px;
+    position: relative;
+    top: 0px;
+    left: 30px;
+}
+.baloon_blk{
+    position: absolute;
+    top: 20%;
+    left: 63%;
+    animation: baloon 2s linear 2s forwards;
+}
+@keyframes baloon {
+    0%{
+        top: 20%;
+    }
+    100%{
+        top: -600px;
+    }
+}
+audio{
+    position: absolute;
+    bottom: 0px;
+} 
